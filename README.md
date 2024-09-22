@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# Download Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can download this project by git clone
 
-Currently, two official plugins are available:
+    git clone https://github.com/beginnerstrongermaster/steam-clone.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Or, you can download ZIP and extract it by yourself
 
-## Expanding the ESLint configuration
+# Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[Check here](https://ultimate-steam-clone.top/) to experience the real website
 
-- Configure the top-level `parserOptions` property like this:
+<hr>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Home Page
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Header and Event
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+![alt text](readme_images/HomePage/hp_gameheader_event.PNG)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Header
+
+Global Header contains three parts: **Logo**, **Menus** and **Install Steam** button
+
+- Click **Logo**, you will be redirected to the Home page
+
+- **Store** menu has three options: Games, News and Stats
+
+  1.  **Games** will lead you to the [Game List](README.md#game-list)
+
+  2.  **News** and **Stats** will lead you to the corresponding official Steam page
+
+- **About**, **Support**, **Install Steam Button** will lead you to the official pages
+
+### Event
+
+Click on the event will lead you to the official event page
+
+### Main Content and Side Bar
+
+![alt text](readme_images/HomePage/hp_main_content_sidebar.PNG)
+
+### Side Bar
+
+Side Bar contains **categories**, you can select them and see the games filtered with the cate you selected
+
+### Featured Games
+
+Featured games is a Steam-like carousel
+
+### All Games
+
+All games is a card group that shows some games, if you want to browse all games, you can click <b>BROWSE ALL</b> at the top right
+
+<hr>
+
+# Game List
+
+![alt text](readme_images/game_list.PNG)
+
+## Search Bar
+
+Search the game through the Search Bar
+
+**Notice: Search will clean out the selected category and filters**
+
+## Selectors
+
+You can filter games by **Platform** and **Sort Order** selectors
+
+## Game List Item
+
+Click game items to see the detail
+
+# Game Detail
+
+![alt text](readme_images/game_detail.PNG)
+
+## Game Summary
+
+You can see Game Summary at the right side
+
+## Media display
+
+The media will be displayed at the left side of the game summary
+
+## Media Bar
+
+You can select the media you want to display
+
+## Description
+
+The description of the game

@@ -25,27 +25,25 @@ const GameDescription = () => {
       </Text>
       <Divider />
       {aboutText(description_raw)}
-      {isLessThanMaxLength ? (
-        expanded ? (
-          <Button
-            size="xs"
-            onClick={() => {
-              setExpanded(false);
-            }}
-          >
-            Show Less
-          </Button>
-        ) : (
-          <Button
-            size="xs"
-            onClick={() => {
-              setExpanded(true);
-            }}
-          >
-            Show More
-          </Button>
-        )
-      ) : null}
+      {isLessThanMaxLength ? null : expanded ? (
+        <Button
+          size="xs"
+          onClick={() => {
+            setExpanded(false);
+          }}
+        >
+          Show Less
+        </Button>
+      ) : (
+        <Button
+          size="xs"
+          onClick={() => {
+            setExpanded(true);
+          }}
+        >
+          Show More
+        </Button>
+      )}
     </Box>
   );
 };
