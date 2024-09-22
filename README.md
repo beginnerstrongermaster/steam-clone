@@ -72,6 +72,8 @@ You can filter games by **Platform** and **Sort Order** selectors
 
 Click game items to see the detail
 
+<hr>
+
 # Game Detail
 
 ![alt text](readme_images/game_detail.PNG)
