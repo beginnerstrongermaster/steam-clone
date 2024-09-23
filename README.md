@@ -10,6 +10,10 @@ Or, you can download ZIP and extract it by yourself
 
 [Check here](https://ultimate-steam-clone.top/) to experience the real website
 
+# API
+
+This Project is using [Rawg API](https://rawg.io/apidocs)
+
 <hr>
 
 # Home Page
